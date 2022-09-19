@@ -1,0 +1,31 @@
+.animatetext{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+   text-align: center;
+    color: rgb(13, 228, 131);
+    letter-spacing: 1.5px;
+    animation: waveAnim 0.8s infinite;
+    animation-delay: calc(.01s *var(--i));
+    text-shadow: #050505;
+  
+  }
+  @keyframes waveAnim {
+    0%,40%,100%{
+      transform: translateY(5px);
+    }
+    20%{
+      transform: translateY(-110%);
+    }
+    
+  }
+
+
+  .notanimatetext{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+   text-align: center;
+    color: rgb(13, 228, 131);
+    letter-spacing: 1.5px;
+    text-shadow: #050505;
+    padding-top: 5px;
+  }

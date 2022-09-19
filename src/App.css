@@ -1,38 +1,134 @@
-.App {
+.mid-box {
+    
+  background-color: rgb(160, 244, 253);
+  border-radius: 1.5em;
+  border-color: rgb(218, 57, 57);
+ 
   text-align: center;
+  padding: 0.3em;
+  margin: 1em;
+  min-height: 640px;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  background: linear-gradient(
+    to right, 
+    rgb(121, 102, 138), 
+    rgb(79, 227, 173),
+    rgb(238, 149, 104)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 270%;
+  margin-bottom: 0;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.textarea{
+  width: 68%;
+  text-align: center;
+  height: 8em;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: beige;
+  resize: vertical;
+  margin-bottom: 0.1em;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 1em;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.draw-button {
+
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom:20px;
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:25px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+
+  padding:0.4em;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 5px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 5px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 5px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.draw-button:active{
+  top:10px;
+  background-color:#F78900;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.draw-button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-5px;
+  left:-4px;
+  z-index:-1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
+
+.output-zone{
+  margin-top: 8%;
+  padding: 0.1em;
+  
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 10px;
+  background-color: beige;
+  text-align: center;
+   margin-bottom: 1em;
+
+  height: 5em;
+}
+
+
+.animation-text{
+   margin: 0;
+   padding-right: 0;
+   font-size: 16px;
+}
+
+.result-title{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+.main-content{
+    display: inline;
+    align-content: space-between;
+}
+
+.h3{
+  margin-left: 30%;
+  margin-right: 30%;
+ font-size: 16px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
